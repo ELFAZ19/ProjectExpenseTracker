@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding">
+
+        <!-- Project Name -->
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textSize="@dimen/text_size_lg"
+            android:fontFamily="sans-serif-medium"
+            tools:text="Website Redesign" />
+
+        <!-- Project Description -->
+        <TextView
+            android:id="@+id/tv_project_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Complete redesign of company website" />
+
+        <!-- Date Range -->
+        <TextView
+            android:id="@+id/tv_project_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:textSize="@dimen/text_size_xs"
+            tools:text="Jan 15, 2026 - Mar 30, 2026" />
+
+        <!-- Budget Info Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Budget -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_budget"
+                    android:textAppearance="@style/TextAppearance.App.Caption"
+                    android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                    android:id="@+id/tv_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.App.Body"
+                    android:textSize="@dimen/text_size_lg"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/colorPrimary"
+                    tools:text="$15,000" />
+
+            </LinearLayout>
+
+            <!-- Spent -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_spent"
+                    android:textAppearance="@style/TextAppearance.App.Caption"
+                    android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                    android:id="@+id/tv_spent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.App.Body"
+                    android:textSize="@dimen/text_size_lg"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="$8,250" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:progressTint="@color/budget_good"
+            android:progressBackgroundTint="@color/surface_variant_light"
+            tools:progress="55" />
+
+        <!-- Progress Percentage Text -->
+        <TextView
+            android:id="@+id/tv_progress_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:textSize="@dimen/text_size_xs"
+            tools:text="55% of budget used" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

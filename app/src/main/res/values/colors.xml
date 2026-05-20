@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Modern vibrant blue -->
+    <color name="primary_light">#1E88E5</color>
+    <color name="primary_dark">#42A5F5</color>
+    <color name="primary_container_light">#D1E9FF</color>
+    <color name="primary_container_dark">#004A77</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container_light">#001D35</color>
+    <color name="on_primary_container_dark">#D1E9FF</color>
+
+    <!-- Secondary Colors - Elegant purple accent -->
+    <color name="secondary_light">#7C4DFF</color>
+    <color name="secondary_dark">#9575CD</color>
+    <color name="secondary_container_light">#EDE7FF</color>
+    <color name="secondary_container_dark">#4527A0</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container_light">#21005D</color>
+    <color name="on_secondary_container_dark">#EDE7FF</color>
+
+    <!-- Tertiary Colors - Fresh teal -->
+    <color name="tertiary_light">#26C6DA</color>
+    <color name="tertiary_dark">#4DD0E1</color>
+    <color name="tertiary_container_light">#B2EBF2</color>
+    <color name="tertiary_container_dark">#006064</color>
+
+    <!-- Background & Surface Colors -->
+    <color name="background_light">#FAFBFF</color>
+    <color name="background_dark">#1A1C1E</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1A1C1E</color>
+    <color name="surface_variant_light">#E1E2EC</color>
+    <color name="surface_variant_dark">#42474E</color>
+    <color name="on_surface_light">#1A1C1E</color>
+    <color name="on_surface_dark">#E2E2E6</color>
+    <color name="on_surface_variant_light">#42474E</color>
+    <color name="on_surface_variant_dark">#C2C7CF</color>
+
+    <!-- Budget Status Colors - Color-coded progress indicators -->
+    <color name="budget_good">#4CAF50</color>        <!-- Green: Under 80% -->
+    <color name="budget_warning">#FF9800</color>     <!-- Orange: 80-100% -->
+    <color name="budget_danger">#F44336</color>      <!-- Red: Over budget -->
+    <color name="budget_good_light">#81C784</color>
+    <color name="budget_warning_light">#FFB74D</color>
+    <color name="budget_danger_light">#E57373</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Card & Elevation Colors -->
+    <color name="card_background_light">#FFFFFF</color>
+    <color name="card_background_dark">#2C2F33</color>
+    <color name="outline_light">#72787F</color>
+    <color name="outline_dark">#8C9199</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_light">#1A1C1E</color>
+    <color name="text_primary_dark">#E2E2E6</color>
+    <color name="text_secondary_light">#42474E</color>
+    <color name="text_secondary_dark">#C2C7CF</color>
+    <color name="text_hint_light">#72787F</color>
+    <color name="text_hint_dark">#8C9199</color>
+
+    <!-- Overlay & Scrim -->
+    <color name="scrim">#000000</color>
+    <color name="overlay_light">#1A000000</color>
+    <color name="overlay_dark">#33FFFFFF</color>
+
+    <!-- Legacy colors for backwards compatibility -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

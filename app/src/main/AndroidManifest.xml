@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".ProjectExpenseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectExpenseTracker"
+        tools:targetApi="31">
+        
+        <!-- Splash Screen (MainActivity) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Project List -->
+        <activity
+            android:name=".activities.ProjectListActivity"
+            android:exported="false"
+            android:label="@string/projects_title" />
+
+        <!-- Add/Edit Project -->
+        <activity
+            android:name=".activities.AddEditProjectActivity"
+            android:exported="false"
+            android:label="@string/add_project_title"
+            android:parentActivityName=".activities.ProjectListActivity" />
+
+        <!-- Task List -->
+        <activity
+            android:name=".activities.TaskListActivity"
+            android:exported="false"
+            android:label="@string/tasks_title"
+            android:parentActivityName=".activities.ProjectListActivity" />
+
+        <!-- Add/Edit Task -->
+        <activity
+            android:name=".activities.AddEditTaskActivity"
+            android:exported="false"
+            android:label="@string/add_task_title"
+            android:parentActivityName=".activities.TaskListActivity" />
+
+        <!-- Expense List -->
+        <activity
+            android:name=".activities.ExpenseListActivity"
+            android:exported="false"
+            android:label="@string/expenses_title"
+            android:parentActivityName=".activities.TaskListActivity" />
+
+        <!-- Add/Edit Expense -->
+        <activity
+            android:name=".activities.AddEditExpenseActivity"
+            android:exported="false"
+            android:label="@string/add_expense_title"
+            android:parentActivityName=".activities.ExpenseListActivity" />
+
+        <!-- Project Summary -->
+        <activity
+            android:name=".activities.ProjectSummaryActivity"
+            android:exported="false"
+            android:label="@string/summary_title"
+            android:parentActivityName=".activities.ProjectListActivity" />
+
+        <!-- Settings -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:parentActivityName=".activities.ProjectListActivity" />
+
+    </application>
+
+</manifest>

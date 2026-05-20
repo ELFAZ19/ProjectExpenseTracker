@@ -1,0 +1,150 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">CostNest</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="app_description">Manage your project budgets and expenses offline</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_welcome">Welcome to CostNest</string>
+    <string name="splash_tagline">Track Every Dollar, Complete Every Project</string>
+    <string name="btn_get_started">Get Started</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add">Add</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="action_confirm">Confirm</string>
+
+    <!-- Project Screen -->
+    <string name="projects_title">My Projects</string>
+    <string name="projects_empty">No projects yet. Tap + to create one!</string>
+    <string name="btn_add_project">Add New Project</string>
+    <string name="project_budget">Budget</string>
+    <string name="project_spent">Spent</string>
+    <string name="project_remaining">Remaining</string>
+    <string name="project_progress">Progress</string>
+    <string name="project_details">Project Details</string>
+    <string name="project_summary">Summary</string>
+
+    <!-- Add/Edit Project -->
+    <string name="add_project_title">New Project</string>
+    <string name="edit_project_title">Edit Project</string>
+    <string name="hint_project_name">Project Name</string>
+    <string name="hint_project_description">Description (Optional)</string>
+    <string name="hint_start_date">Start Date</string>
+    <string name="hint_end_date">End Date</string>
+    <string name="label_start_date">Start Date</string>
+    <string name="label_end_date">End Date</string>
+    <string name="error_project_name_required">Project name is required</string>
+    <string name="error_invalid_date_range">End date must be after start date</string>
+
+    <!-- Task Screen -->
+    <string name="tasks_title">Tasks</string>
+    <string name="tasks_empty">No tasks yet. Tap + to create one!</string>
+    <string name="btn_add_task">Add New Task</string>
+    <string name="task_budget">Budget</string>
+    <string name="task_spent">Spent</string>
+    <string name="task_status">Status</string>
+    <string name="task_pending">Pending</string>
+    <string name="task_completed">Completed</string>
+    <string name="filter_all_tasks">All Tasks</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_completed">Completed</string>
+
+    <!-- Add/Edit Task -->
+    <string name="add_task_title">New Task</string>
+    <string name="edit_task_title">Edit Task</string>
+    <string name="hint_task_name">Task Name</string>
+    <string name="hint_task_budget">Budget Amount</string>
+    <string name="label_task_status">Task Status</string>
+    <string name="error_task_name_required">Task name is required</string>
+    <string name="error_task_budget_required">Budget is required</string>
+    <string name="error_invalid_budget">Budget must be greater than 0</string>
+
+    <!-- Expense Screen -->
+    <string name="expenses_title">Expenses</string>
+    <string name="expenses_empty">No expenses yet. Tap + to add one!</string>
+    <string name="btn_add_expense">Add Expense</string>
+    <string name="expense_total">Total Expenses</string>
+    <string name="expense_date">Date</string>
+    <string name="expense_amount">Amount</string>
+    <string name="expense_description">Description</string>
+    <string name="budget_status_good">Under Budget</string>
+    <string name="budget_status_warning">Near Limit</string>
+    <string name="budget_status_danger">Over Budget</string>
+
+    <!-- Add/Edit Expense -->
+    <string name="add_expense_title">New Expense</string>
+    <string name="edit_expense_title">Edit Expense</string>
+    <string name="hint_expense_amount">Amount</string>
+    <string name="hint_expense_description">Description</string>
+    <string name="hint_expense_date">Date</string>
+    <string name="label_expense_date">Expense Date</string>
+    <string name="error_expense_amount_required">Amount is required</string>
+    <string name="error_invalid_amount">Amount must be greater than 0</string>
+
+    <!-- Project Summary -->
+    <string name="summary_title">Project Summary</string>
+    <string name="summary_overview">Overview</string>
+    <string name="summary_total_budget">Total Budget</string>
+    <string name="summary_total_spent">Total Spent</string>
+    <string name="summary_percentage">Percentage Used</string>
+    <string name="summary_task_breakdown">Task Breakdown</string>
+    <string name="summary_budget_vs_spent">Budget vs Spent</string>
+    <string name="chart_pie_title">Expense Distribution</string>
+    <string name="chart_bar_title">Budget Comparison</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_general">General</string>
+    <string name="settings_data">Data Management</string>
+    <string name="settings_about">About</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System Default</string>
+    <string name="btn_clear_data">Clear All Data</string>
+    <string name="clear_data_warning">This will delete all projects, tasks, and expenses. This action cannot be undone!</string>
+    <string name="clear_data_confirm">Are you sure?</string>
+    <string name="developer_title">Developed by DDU CS 2018/26</string>
+    <string name="developer_info">1. Yabsira Dejene (1501750)\n2. Yenus Kindu (1501779)\n3. Trhas Abrha (1502253)\n4. Nebyu Ermiyas (1501530)\n5. Hebron Solomon (1502273)\n6. Abel Ayele (1500785)</string>
+
+    <!-- Messages & Toasts -->
+    <string name="msg_project_added">Project created successfully</string>
+    <string name="msg_project_updated">Project updated successfully</string>
+    <string name="msg_project_deleted">Project deleted</string>
+    <string name="msg_task_added">Task created successfully</string>
+    <string name="msg_task_updated">Task updated successfully</string>
+    <string name="msg_task_deleted">Task deleted</string>
+    <string name="msg_expense_added">Expense added successfully</string>
+    <string name="msg_expense_updated">Expense updated successfully</string>
+    <string name="msg_expense_deleted">Expense deleted</string>
+    <string name="msg_data_cleared">All data has been cleared</string>
+    <string name="msg_operation_failed">Operation failed. Please try again.</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_title">Delete %1$s?</string>
+    <string name="dialog_delete_message">This action cannot be undone.</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <!-- Formats -->
+    <string name="format_currency">Br%1$,.2f</string>
+    <string name="format_percentage">%1$.1f%%</string>
+    <string name="format_date">MMM dd, yyyy</string>
+
+    <!-- Accessibility -->
+    <string name="cd_add_button">Add new item</string>
+    <string name="cd_edit_button">Edit item</string>
+    <string name="cd_delete_button">Delete item</string>
+    <string name="cd_back_button">Go back</string>
+    <string name="cd_project_icon">Project icon</string>
+    <string name="cd_task_icon">Task icon</string>
+    <string name="cd_expense_icon">Expense icon</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding">
+
+        <!-- Header with Task Name and Status Badge -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Task Name -->
+            <TextView
+                android:id="@+id/tv_task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/tv_status_badge"
+                android:textAppearance="@style/TextAppearance.App.Title"
+                android:textSize="@dimen/text_size_lg"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="UI Design" />
+
+            <!-- Status Badge -->
+            <TextView
+                android:id="@+id/tv_status_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/badge_pending"
+                android:paddingStart="@dimen/spacing_sm"
+                android:paddingEnd="@dimen/spacing_sm"
+                android:paddingTop="@dimen/spacing_xs"
+                android:paddingBottom="@dimen/spacing_xs"
+                android:textSize="@dimen/text_size_xs"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                tools:text="PENDING" />
+
+        </RelativeLayout>
+
+        <!-- Budget and Spent Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Budget -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_budget"
+                    android:textAppearance="@style/TextAppearance.App.Caption"
+                    android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                    android:id="@+id/tv_task_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.App.Body"
+                    android:textSize="@dimen/text_size_md"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/colorPrimary"
+                    tools:text="$5,000" />
+
+            </LinearLayout>
+
+            <!-- Spent -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_spent"
+                    android:textAppearance="@style/TextAppearance.App.Caption"
+                    android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                    android:id="@+id/tv_task_spent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.App.Body"
+                    android:textSize="@dimen/text_size_md"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="$3,200" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:progressTint="@color/budget_good"
+            android:progressBackgroundTint="@color/surface_variant_light"
+            tools:progress="64" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
